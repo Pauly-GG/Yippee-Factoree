@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://fne481udtlqt"]
+
+[ext_resource type="Texture2D" uid="uid://dtbhg5l0ky0bg" path="res://Images/Shoppee_Scene.png" id="1_1f4tx"]
+[ext_resource type="Texture2D" uid="uid://d4m4q5hsjh7gx" path="res://Images/hampter.png" id="2_f7p8u"]
+[ext_resource type="Script" path="res://Scripts/dummy_sprite.gd" id="3_bqxkb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ShopScene" type="Sprite2D" parent="."]
+texture = ExtResource("1_1f4tx")
+centered = false
+
+[node name="DummySprite" type="Sprite2D" parent="."]
+position = Vector2(293, 730)
+texture = ExtResource("2_f7p8u")
+script = ExtResource("3_bqxkb")
