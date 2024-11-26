@@ -1,4 +1,4 @@
-extends Sprite2D
+extends CharacterBody2D
 
 # Movement speed
 var speed = 200 

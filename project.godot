@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Yippee"
-run/main_scene="res://Scenes/testscene.tscn"
+run/main_scene="res://Scenes/shoppeescene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Assets/icon.svg"
+
+[autoload]
+
+GameState="*res://GameState.gd"
 
 [display]
 

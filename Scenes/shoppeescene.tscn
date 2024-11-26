@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://mnw1l67hb7v"]
+
+[ext_resource type="Texture2D" uid="uid://br7h3bpwkmo6" path="res://Images/Shoppee_Scene.PNG" id="1_dvgi2"]
+[ext_resource type="Script" path="res://Scripts/shoppeedoor.gd" id="2_ew3y8"]
+[ext_resource type="PackedScene" uid="uid://b8m1cwrrtj5ad" path="res://Scenes/DummySprite.tscn" id="3_1kjsj"]
+[ext_resource type="Texture2D" uid="uid://c3f5nucpu6gt0" path="res://Images/Shoppee_Front_Objects.PNG" id="4_v5lbl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ShopScene" type="Sprite2D" parent="."]
+texture = ExtResource("1_dvgi2")
+centered = false
+
+[node name="Area2D" type="Area2D" parent="ShopScene"]
+script = ExtResource("2_ew3y8")
+door_name = "left_door"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ShopScene/Area2D"]
+position = Vector2(167, 731)
+polygon = PackedVector2Array(-59, -546, -53, 88, -167, 351, -164, -440)
+
+[node name="DummySprite" parent="." instance=ExtResource("3_1kjsj")]
+
+[node name="Front_Objects_Shoppee" type="Sprite2D" parent="."]
+top_level = true
+texture = ExtResource("4_v5lbl")
+centered = false
+
+[connection signal="body_entered" from="ShopScene/Area2D" to="ShopScene/Area2D" method="_on_body_entered"]

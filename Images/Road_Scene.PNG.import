@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br7h3bpwkmo6"
-path="res://.godot/imported/Shoppee_Scene.PNG-0b35f3202e176d7a9a678eabbd14ac94.ctex"
+uid="uid://bssmo8v75cfhb"
+path="res://.godot/imported/Road_Scene.PNG-8444b93bb4600c91626d047c99b29184.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/Shoppee_Scene.PNG"
-dest_files=["res://.godot/imported/Shoppee_Scene.PNG-0b35f3202e176d7a9a678eabbd14ac94.ctex"]
+source_file="res://Images/Road_Scene.PNG"
+dest_files=["res://.godot/imported/Road_Scene.PNG-8444b93bb4600c91626d047c99b29184.ctex"]
 
 [params]
 

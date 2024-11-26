@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsouuw1u3o252"]
+
+[ext_resource type="Texture2D" uid="uid://bssmo8v75cfhb" path="res://Images/Road_Scene.PNG" id="1_nqx5b"]
+[ext_resource type="Script" path="res://Scenes/roadscene.gd" id="1_xtnig"]
+[ext_resource type="Texture2D" uid="uid://cowxjfcdg0bch" path="res://Images/Road_Back_Objects.PNG" id="3_fm7ov"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_xtnig")
+
+[node name="Road_Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_nqx5b")
+centered = false
+
+[node name="Road_Objects" type="Sprite2D" parent="."]
+texture = ExtResource("3_fm7ov")
+centered = false

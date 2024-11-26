@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djbh2rxa6yt0u"
-path="res://.godot/imported/between_scene.png-00b66fa6fb44f2c5df5b416f1311ba03.ctex"
+uid="uid://cowxjfcdg0bch"
+path="res://.godot/imported/Road_Back_Objects.PNG-a5e09112811b14020201ab86c2488691.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/between_scene.png"
-dest_files=["res://.godot/imported/between_scene.png-00b66fa6fb44f2c5df5b416f1311ba03.ctex"]
+source_file="res://Images/Road_Back_Objects.PNG"
+dest_files=["res://.godot/imported/Road_Back_Objects.PNG-a5e09112811b14020201ab86c2488691.ctex"]
 
 [params]
 
