@@ -1,7 +1,7 @@
 extends Node
 
-# Variable to store the player's position
+# Player position
 var player_position = Vector2(0, 0)
 
-# Variable to store the door the player entered
+# Door the player entered from
 var player_entry_door = ""

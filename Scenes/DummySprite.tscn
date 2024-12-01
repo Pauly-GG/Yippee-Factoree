@@ -7,7 +7,7 @@
 size = Vector2(170, 155)
 
 [node name="DummySprite" type="CharacterBody2D"]
-position = Vector2(293, 730)
+position = Vector2(807, 806)
 script = ExtResource("1_53oh4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

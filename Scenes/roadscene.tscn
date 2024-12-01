@@ -1,16 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsouuw1u3o252"]
+[gd_scene load_steps=5 format=3 uid="uid://bsouuw1u3o252"]
 
+[ext_resource type="Script" path="res://Scripts/roadscene.gd" id="1_60c1n"]
 [ext_resource type="Texture2D" uid="uid://bssmo8v75cfhb" path="res://Images/Road_Scene.PNG" id="1_nqx5b"]
-[ext_resource type="Script" path="res://Scenes/roadscene.gd" id="1_xtnig"]
 [ext_resource type="Texture2D" uid="uid://cowxjfcdg0bch" path="res://Images/Road_Back_Objects.PNG" id="3_fm7ov"]
+[ext_resource type="Script" path="res://Scripts/road_door.gd" id="3_ye2dn"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_xtnig")
+script = ExtResource("1_60c1n")
 
 [node name="Road_Background" type="Sprite2D" parent="."]
 texture = ExtResource("1_nqx5b")
 centered = false
 
+[node name="Area2D" type="Area2D" parent="Road_Background"]
+script = ExtResource("3_ye2dn")
+door_name = "road_right_door"
+target_scene = "res://Scenes/shoppeescene.tscn"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Road_Background/Area2D"]
+position = Vector2(1967, 953)
+polygon = PackedVector2Array(-47, -556, -50, 95, -161, -139, -158, -646)
+
 [node name="Road_Objects" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("3_fm7ov")
 centered = false
+
+[connection signal="body_entered" from="Road_Background/Area2D" to="Road_Background/Area2D" method="_on_body_entered"]
